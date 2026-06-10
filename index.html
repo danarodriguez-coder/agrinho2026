@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Agro Futuro - Água Sustentável no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de acessibilidade fixo -->
+    <div class="acessibilidade-botao" id="acessibilidadeBotao">
+        ♿ Acessibilidade
+    </div>
+
+    <!-- Painel de acessibilidade (inicialmente escondido) -->
+    <div class="painel-acessibilidade" id="painelAcessibilidade">
+        <button id="aumentarFonte">A+ Aumentar Fonte</button>
+        <button id="diminuirFonte">A- Diminuir Fonte</button>
+        <button id="altoContraste">🌓 Alto Contraste</button>
+        <button id="fecharPainel">✖ Fechar</button>
+    </div>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <h1>🌾 Agro Futuro</h1>
+            <p class="subtitulo">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#dicas">Dicas Sustentáveis</a></li>
+                <li><a href="#gerador">Gerador de Dicas</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio" class="secao">
+            <div class="container">
+                <h2>💧 Bem-vindo ao Agro Futuro</h2>
+                <p>Nosso objetivo é ajudar agricultores a <strong>economizar água</strong> e reutilizá-la de forma sustentável, garantindo produção no campo mesmo em tempos de seca.</p>
+                <p>Com pequenas mudanças no dia a dia, é possível preservar a água e fortalecer o agro para o futuro.</p>
+            </div>
+        </section>
+
+        <!-- Seção Problema -->
+        <section id="problema" class="secao fundo-claro">
+            <div class="container">
+                <h2>🚱 O Problema: Desperdício de Água na Agricultura</h2>
+                <article>
+                    <p>A agricultura consome cerca de 70% da água doce disponível no mundo. No Brasil, muitas propriedades rurais ainda utilizam técnicas antigas que <strong>desperdiçam até 50% da água</strong> irrigada.</p>
+                    <p>Esse desperdício afeta rios, nascentes e o abastecimento de comunidades inteiras. Além disso, em períodos de estiagem, os agricultores sofrem com a falta de água para manter suas plantações.</p>
+                    <p><strong>Por que isso é importante?</strong> Economizar água no campo significa garantir alimentos para todos e preservar o meio ambiente para as próximas gerações.</p>
+                </article>
+                <!-- Espaço para desenho produzido pelo aluno -->
+                <div class="desenho-container">
+                    <p>🎨 <em>Desenho produzido por mim sobre o desperdício de água:</em></p>
+                    <div class="desenho-placeholder">
+                        [Aqui será colocado meu desenho sobre desperdício de água na agricultura]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Dicas Sustentáveis (conteúdo autoral) -->
+        <section id="dicas" class="secao">
+            <div class="container">
+                <h2>🌱 Dicas para Economizar e Reutilizar Água</h2>
+                <div class="cards-dicas">
+                    <div class="card">
+                        <h3>🚿 1. Gotejamento</h3>
+                        <p>Use irrigação por gotejamento. Ela leva água direto à raiz da planta, reduzindo o desperdício em até 60%.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💧 2. Reuso da água da chuva</h3>
+                        <p>Instale calhas e cisternas para captar água da chuva. Use essa água para irrigar em períodos de seca.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌾 3. Cobertura do solo</h3>
+                        <p>Palha e restos de cultura mantêm o solo úmido por mais tempo, reduzindo a necessidade de irrigação.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⏰ 4. Horário certo</h3>
+                        <p>Irrigue no início da manhã ou no final da tarde para evitar perda por evaporação.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔄 5. Água de reuso</h3>
+                        <p>Água da lavagem de equipamentos ou da criação de peixes pode ser reaproveitada nas plantações.</p>
+                    </div>
+                </div>
+                <!-- Espaço para mais desenhos -->
+                <div class="desenho-container">
+                    <p>🎨 <em>Meu desenho sobre reutilização da água:</em></p>
+                    <div class="desenho-placeholder">
+                        [Desenho mostrando como reutilizar água de forma sustentável]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Gerador de Dicas Sustentáveis (Funcionalidade JavaScript) -->
+        <section id="gerador" class="secao fundo-claro">
+            <div class="container">
+                <h2>🔄 Gerador de Dicas Sustentáveis</h2>
+                <p>Clique no botão abaixo e receba uma dica aleatória para economizar água na agricultura:</p>
+                <div class="gerador-box">
+                    <button id="botaoGerarDica">💡 Gerar Dica Sustentável</button>
+                    <div id="dicaGerada" class="dica-resultado">
+                        Clique no botão para receber sua primeira dica!
+                    </div>
+                </div>
+                <!-- Botão para vídeo sobre reutilização da água -->
+                <div class="video-box">
+                    <p>📺 Assista a um vídeo educativo sobre reutilização da água no campo:</p>
+                    <button id="botaoVideo">🎬 Ver vídeo sobre reutilização da água</button>
+                </div>
+                <div id="videoContainer" class="video-container" style="display: none;">
+                    <!-- Simulação de vídeo - link do YouTube incorporado (apenas exemplo educativo) -->
+                    <p>▶️ Vídeo: "Como reutilizar água na agricultura familiar"</p>
+                    <div class="video-placeholder">
+                        [Aqui seria incorporado um vídeo sobre reutilização da água. 
+                        Para este projeto, imagine um vídeo educativo mostrando sistemas de captação de chuva e irrigação por gotejamento.]
+                    </div>
+                    <p class="video-nota">* Substitua este espaço pelo link do seu vídeo real quando disponível.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Soluções Sustentáveis -->
+        <section id="solucoes" class="secao">
+            <div class="container">
+                <h2>🌍 Soluções Sustentáveis para o Campo</h2>
+                <article>
+                    <p>As soluções para o desperdício de água existem e são acessíveis. Veja abaixo algumas tecnologias e práticas:</p>
+                    <ul class="lista-solucoes">
+                        <li><strong>Captação de água da chuva</strong> – Cisternas e barragens subterrâneas.</li>
+                        <li><strong>Irrigação automatizada</strong> – Sensores de umidade do solo ligam a irrigação só quando necessário.</li>
+                        <li><strong>Reuso de água cinza</strong> – Água de pias e tanques pode ser tratada e usada nas plantas.</li>
+                        <li><strong>Plantio direto</strong> – Mantém palha no solo, reduz evaporação.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao" class="secao fundo-verde">
+            <div class="container">
+                <h2>🌿 Conclusão: Agro Futuro Sustentável</h2>
+                <p>O equilíbrio entre produção agrícola e meio ambiente é possível quando adotamos práticas sustentáveis. Economizar e reutilizar água não é apenas uma escolha ecológica, mas uma <strong>necessidade para garantir a produção de alimentos</strong> no futuro.</p>
+                <p>Com pequenas atitudes, como as dicas apresentadas neste site, os agricultores podem enfrentar períodos de seca com mais tranquilidade e contribuir para um planeta mais saudável.</p>
+                <p><em>"Água economizada hoje é colheita garantida amanhã."</em></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Projeto desenvolvido por Dana Valentina Zarraga Rodriguez - Concurso Agrinho 2026</p>
+            <p>Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+            <p>🌱 Todos os conteúdos e desenhos são autorais.</p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
